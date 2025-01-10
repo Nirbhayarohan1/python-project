@@ -1,0 +1,23 @@
+#div1{
+    height: 220px;
+    width: 200px;
+    border: 10px solid black;
+    padding: 20px;
+    background-color: #79a3a3;
+}
+#div2{
+    height: 220px;
+    width: 200px;
+    border: solid black;
+    border-width: 20px 10px;
+    background-color: goldenrod;
+    margin-left: 260px;
+}
+#div3{
+    height: 220px;
+    width: 200px;
+    border: 10px solid black;
+    background-color: brown;
+    margin-left: 40px;
+
+}

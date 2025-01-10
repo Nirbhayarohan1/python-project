@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Food Supply Data Dashboard</h1>
+    <div id="chart"></div>
+    <script>
+        // Fetch data and render the chart
+        const data = JSON.parse('{{ data | safe }}');
+        const years = Object.keys(data[0]).slice(1);
+        const traces = data.map(commodity => ({
+            x: years,
+            y: Object.values(commodity).slice(1),
+            name: commodity.Commodity,
+            type: 'scatter'
+        }));
+        Plotly.newPlot('chart', traces);
+    </script>
+</body>
+</html>

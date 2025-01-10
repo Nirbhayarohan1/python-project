@@ -1,0 +1,9 @@
+"""l=[1,2,34,'a',True]
+print(l)
+print(type(l))
+a=[1,2,3]
+b=[4,5]
+c=a+b
+print(c)
+type(c)
+"""
