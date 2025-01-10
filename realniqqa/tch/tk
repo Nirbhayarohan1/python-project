@@ -1,3 +1,0 @@
-npx create-react-app tinder-clone
-cd tinder-clone
-npm start
